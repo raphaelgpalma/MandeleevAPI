@@ -15,16 +15,22 @@ public class Elemento {
     private String simboloQuimico;
     private int numeroAtomico;
     private double massaAtomica;
+    private String grupo;
+    private String periodo;
+
+    private String configuracaoEletronica;
 
 
     public Elemento() {}
 
-    public Elemento(String nome, String simboloQuimico, int numeroAtomico, double massaAtomica)
+    public Elemento(String nome, String simboloQuimico,String grupo,String periodo, int numeroAtomico, double massaAtomica, String configuracaoEletronica)
     {
      this.nome = nome;
      this.simboloQuimico = simboloQuimico;
      this.numeroAtomico = numeroAtomico;
      this.massaAtomica = massaAtomica;
+     this.grupo = grupo;
+     this.periodo = periodo;
 
     }
 
@@ -58,4 +64,24 @@ public class Elemento {
 
     public void setMassaAtomica(double massaAtomica) { this.massaAtomica = massaAtomica; }
 
+    public String getGrupo() {
+        return grupo;
+    }
+    public void setGrupo(String grupo) {
+        this.grupo = grupo;
+    }
+
+    public String getPeriodo() {
+        return periodo;
+    }
+    public void setPeriodo(String periodo) {
+        this.periodo = periodo;
+    }
+
+    public String getConfiguracaoEletronica() {
+        return configuracaoEletronica;
+    }
+    public void setConfiguracaoEletronica(String configuracaoEletronica) {
+        this.configuracaoEletronica = configuracaoEletronica;
+    }
 }
