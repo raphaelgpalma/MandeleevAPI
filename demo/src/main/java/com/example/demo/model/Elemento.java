@@ -17,10 +17,7 @@ public class Elemento {
     private double massaAtomica;
 
 
-    public Elemento(){
-
-
-    }
+    public Elemento() {}
 
     public Elemento(String nome, String simboloQuimico, int numeroAtomico, double massaAtomica)
     {
@@ -31,13 +28,9 @@ public class Elemento {
 
     }
 
-    public Long getId() {
-        return id;
-    }
+    public Long getId() {return id;}
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    public void setId(Long id) {this.id = id;}
 
     public String getNome() {
         return nome;
@@ -51,15 +44,18 @@ public class Elemento {
         return simboloQuimico;
     }
 
-    public void setCpf(String simboloQuimico) {
-        this.simboloQuimico = simboloQuimico;
-    }
+    public void setSimboloQuimico(String simboloQuimico) { this.simboloQuimico = simboloQuimico;}
 
-    public double getNumeroAtomico() {
+    public int getNumeroAtomico() {
         return numeroAtomico;
     }
 
     public void setNumeroAtomico(int numeroAtomico) {
         this.numeroAtomico = numeroAtomico;
     }
+
+    public double getMassaAtomica() { return  massaAtomica; }
+
+    public void setMassaAtomica(double massaAtomica) { this.massaAtomica = massaAtomica; }
+
 }
