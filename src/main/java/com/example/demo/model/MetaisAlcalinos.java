@@ -11,11 +11,7 @@ public class MetaisAlcalinos extends Elemento{
     public MetaisAlcalinos() {
     }
 
-    public MetaisAlcalinos(String nome, String simboloQuimico, int numeroAtomico, double massaAtomica, String reatividade, String pontoDeFusao) {
-        super(nome, simboloQuimico, numeroAtomico, massaAtomica);
-        this.reatividade = reatividade;
-        this.pontoDeFusao = pontoDeFusao;
-    }
+
 
     public String getReatividade() {
         return reatividade;

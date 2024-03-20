@@ -5,31 +5,50 @@ import jakarta.persistence.Entity;
 @Entity
 public class Atom extends Elemento{
 
-    private int numProtons;
-    private int numEletrons;
+    private int protons;
+    private int eletrons;
+    private int neutrons;
+    private double totalMass;
+
 
     public Atom() {
     }
-
     public Atom(String nome, String simboloQuimico, int numeroAtomico, double massaAtomica, String grupo, String periodo) {
         super(nome, simboloQuimico, numeroAtomico, massaAtomica, grupo, periodo);
-        this.numProtons = numProtons;
-        this.numEletrons = numEletrons;
+        this.protons = protons;
+        this.eletrons = eletrons;
     }
-    public int getNumProtons() {
-        return numProtons;
-    }
-
-    public void setNumProtons(int numProtons) {
-        this.numProtons = numProtons;
+    public int getProtons() {
+        return protons;
     }
 
-    public int getNumEletrons() {
-        return numEletrons;
+    public void setProtons(int protons) {
+        this.protons = protons;
     }
 
-    public void setNumEletrons(int numEletrons) {
-        this.numEletrons = numEletrons;
+    public int getEletrons() {
+        return eletrons;
+    }
+
+    public void setEletrons(int eletrons) {
+        this.eletrons = eletrons;
+    }
+
+
+    public void calculateAtomicMass() {
+
+        double massaProton = 1.007278;
+        double massaNeutron = 1.008665;
+
+        this.totalMass = protons * massaProton + neutrons * massaNeutron;
+    }
+
+    public double getTotalMass() {
+        return totalMass;
+    }
+
+    public void setTotalMass(double totalMass) {
+        this.totalMass = totalMass;
     }
 }
 

@@ -23,15 +23,14 @@ public class Elemento {
 
     public Elemento() {}
 
-    public Elemento(String nome, String simboloQuimico,String grupo,String periodo, int numeroAtomico, double massaAtomica, String configuracaoEletronica)
-    {
-     this.nome = nome;
-     this.simboloQuimico = simboloQuimico;
-     this.numeroAtomico = numeroAtomico;
-     this.massaAtomica = massaAtomica;
-     this.grupo = grupo;
-     this.periodo = periodo;
 
+    public Elemento(String nome, String simboloQuimico, int numeroAtomico, double massaAtomica, String grupo, String periodo) {
+        this.nome = nome;
+        this.simboloQuimico = simboloQuimico;
+        this.numeroAtomico = numeroAtomico;
+        this.massaAtomica = massaAtomica;
+        this.grupo = grupo;
+        this.periodo = periodo;
     }
 
     public Long getId() {return id;}
