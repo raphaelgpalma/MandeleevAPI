@@ -34,20 +34,31 @@ public class Atom extends Elemento{
         this.eletrons = eletrons;
     }
 
+    public int getNeutrons() {
+        return neutrons;
+    }
 
-    public void calculateAtomicMass() {
+    public void setNeutrons(int neutrons) {
+        this.neutrons = neutrons;
+    }
+
+
+    public double calculateAtomicMass() {
 
         double massaProton = 1.007278;
         double massaNeutron = 1.008665;
 
         this.totalMass = protons * massaProton + neutrons * massaNeutron;
-    }
-
-    public double getTotalMass() {
         return totalMass;
     }
 
-    public void setTotalMass(double totalMass) {
+    double atomMass =  calculateAtomicMass();
+
+    public double getAtomMass() {
+        return calculateAtomicMass();
+    }
+
+    public void setAtomMass(double totalMass) {
         this.totalMass = totalMass;
     }
 }
