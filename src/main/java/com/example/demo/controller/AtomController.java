@@ -22,7 +22,7 @@ public class AtomController {
     }
 
     @PostMapping
-    public Atom criar(@Valid @RequestBody Atom atom) {
-        return atomRepository.save(atom);
+    public List<Atom> criar(@Valid @RequestBody List<Atom> atom) {
+        return atomRepository.saveAll(atom);
     }
 }
