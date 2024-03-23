@@ -12,23 +12,20 @@ public class Elemento {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
-    private String simboloQuimico;
+    private String simbolo;
     private int numeroAtomico;
-    private double massaAtomica;
     private String grupo;
     private String periodo;
 
-    private String configuracaoEletronica;
 
 
     public Elemento() {}
 
 
-    public Elemento(String nome, String simboloQuimico, int numeroAtomico, double massaAtomica, String grupo, String periodo) {
+    public Elemento(String nome, String simbolo, int numeroAtomico, String grupo, String periodo) {
         this.nome = nome;
-        this.simboloQuimico = simboloQuimico;
+        this.simbolo = simbolo;
         this.numeroAtomico = numeroAtomico;
-        this.massaAtomica = massaAtomica;
         this.grupo = grupo;
         this.periodo = periodo;
     }
@@ -45,11 +42,11 @@ public class Elemento {
         this.nome = nome;
     }
 
-    public String getSimboloQuimico() {
-        return simboloQuimico;
+    public String getSimbolo() {
+        return simbolo;
     }
 
-    public void setSimboloQuimico(String simboloQuimico) { this.simboloQuimico = simboloQuimico;}
+    public void setSimbolo(String simbolo) { this.simbolo = simbolo;}
 
     public int getNumeroAtomico() {
         return numeroAtomico;
@@ -58,10 +55,6 @@ public class Elemento {
     public void setNumeroAtomico(int numeroAtomico) {
         this.numeroAtomico = numeroAtomico;
     }
-
-    public double getMassaAtomica() { return  massaAtomica; }
-
-    public void setMassaAtomica(double massaAtomica) { this.massaAtomica = massaAtomica; }
 
     public String getGrupo() {
         return grupo;
@@ -77,10 +70,4 @@ public class Elemento {
         this.periodo = periodo;
     }
 
-    public String getConfiguracaoEletronica() {
-        return configuracaoEletronica;
-    }
-    public void setConfiguracaoEletronica(String configuracaoEletronica) {
-        this.configuracaoEletronica = configuracaoEletronica;
-    }
 }

@@ -13,8 +13,8 @@ public class Atom extends Elemento{
 
     public Atom() {
     }
-    public Atom(String nome, String simboloQuimico, int numeroAtomico, double massaAtomica, String grupo, String periodo) {
-        super(nome, simboloQuimico, numeroAtomico, massaAtomica, grupo, periodo);
+    public Atom(String nome, String simbolo, int numeroAtomico, String grupo, String periodo) {
+        super(nome, simbolo, numeroAtomico, grupo, periodo);
         this.protons = protons;
         this.eletrons = eletrons;
     }

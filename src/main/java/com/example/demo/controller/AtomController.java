@@ -2,9 +2,7 @@ package com.example.demo.controller;
 
 
 import com.example.demo.model.Atom;
-import com.example.demo.model.MetaisAlcalinos;
 import com.example.demo.repository.AtomRepository;
-import com.example.demo.repository.MetaisAlcalinosRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
