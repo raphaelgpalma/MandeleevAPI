@@ -1,15 +1,10 @@
 package com.example.demo.model;
 
-import jakarta.persistence.*;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
+import jakarta.persistence.MappedSuperclass;
 
-@Entity
-@Inheritance(strategy = InheritanceType.JOINED)
-public class Elemento {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+@MappedSuperclass
+public abstract class Elemento {
+
     private Long id;
     private String nome;
     private String simbolo;
@@ -19,7 +14,9 @@ public class Elemento {
 
 
 
-    public Elemento() {}
+    public Elemento() {
+
+    }
 
 
     public Elemento(String nome, String simbolo, int numeroAtomico, String grupo, String periodo) {

@@ -1,7 +1,6 @@
 package com.example.demo.controller;
 
 import com.example.demo.model.Elemento;
-import com.example.demo.model.Funcionario;
 import com.example.demo.service.ElementoService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,8 +19,9 @@ public class ElementoController {
     ElementoService elementoService;
 
     @GetMapping
-    public List<Elemento> listarElementos() { return elementoService.listarElementos(); }
-
+    public List<Elemento> listarAtom(){
+        return elementoService.findAll();
+    }
     @PostMapping
     public Elemento criar(@Valid @RequestBody Elemento elemento) {
 

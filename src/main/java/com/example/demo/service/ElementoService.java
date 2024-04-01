@@ -10,48 +10,19 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class ElementoService {
+public interface ElementoService <A extends Elemento>{
 
-    @Autowired
-    ElementoRepository elementoRepository;
+    List<A> listarAtom();
 
-    public List<Elemento> listarElementos(){return elementoRepository.findAll();}
+    A criar(A a);
 
-    public Elemento criar(Elemento elemento) {return elementoRepository.save(elemento);}
+    List<Elemento> findAll();
 
-    public Elemento atualizar(Elemento elemento, Long id){
+    A atualizar(A a, Long id);
 
-        if(verificaID(id)){
-            //verdadeiro
-            elemento.setId(id);
-            return elementoRepository.save(elemento);
+    boolean deletar(Long id);
 
+    int qtdElementos();
 
-        }
-        return null;
-    }
-
-    private boolean verificaID(Long id) {
-        if(elementoRepository.existsById(id)){
-
-            return true;
-        } else {
-
-            return false;
-        }
-    }
-    public boolean deletar(Long id) {
-        if(verificaID(id)) {
-            elementoRepository.deleteById(id);
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    public int qtdElementos() {
-        return elementoRepository.findAll().size();
-    }
-
-    public Optional<Elemento> buscaPorID(Long id) { return elementoRepository.findById(id); }
+    Optional<Elemento> buscaPorID(Long id);
 }
