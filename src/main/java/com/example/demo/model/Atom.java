@@ -1,9 +1,13 @@
 package com.example.demo.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 @Entity
 public class Atom extends Elemento{
+
 
     private int protons;
     private int eletrons;
@@ -61,5 +65,6 @@ public class Atom extends Elemento{
     public void setAtomMass(double totalMass) {
         this.totalMass = totalMass;
     }
+
 }
 
