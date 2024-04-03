@@ -19,7 +19,6 @@ public interface ElementoService <A extends Elemento>{
 
     A criar(A a);
 
-    List<Atom> criarVarios(List<Atom> listAtom);
 
     A atualizar(A a, Long id);
 

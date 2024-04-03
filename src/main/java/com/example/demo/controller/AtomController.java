@@ -23,6 +23,13 @@ public class AtomController {
         return new ResponseEntity<>(lista, HttpStatus.OK);
     }
 
+    @GetMapping("/ordenar")
+    public ResponseEntity<List<Atom>> ordenarAtom() {
+        List<Atom> listaOrdenada = atomService.ordenarAtom();
+        return new ResponseEntity<>(listaOrdenada, HttpStatus.OK);
+    }
+
+
 
     @PostMapping
     public ResponseEntity<Atom> criar(@RequestBody Atom atom) {
