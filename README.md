@@ -13,7 +13,7 @@ Atomic Calculations: Functionality to perform atomic calculations, such as calcu
 
 Usage:
 
-    Clone the Repository:
+Clone the Repository:
 
 ```bash
     git clone https://github.com/your-username/mendeleev-api.git
