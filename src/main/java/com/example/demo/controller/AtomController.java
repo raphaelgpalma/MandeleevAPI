@@ -23,7 +23,7 @@ public class AtomController {
         return new ResponseEntity<>(lista, HttpStatus.OK);
     }
 
-    @GetMapping("/ordenar")
+    @GetMapping("/ordenar-por-numero-atomico")
     public ResponseEntity<List<Atom>> ordenarAtom() {
         List<Atom> listaOrdenada = atomService.ordenarAtom();
         return new ResponseEntity<>(listaOrdenada, HttpStatus.OK);

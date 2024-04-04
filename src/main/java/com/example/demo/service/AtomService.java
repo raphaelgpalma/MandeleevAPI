@@ -32,10 +32,10 @@ public class AtomService implements ElementoService<Atom>{
     }
 
     public List<Atom> ordenarAtom() {
-        // Obtém a lista de átomos do repositório
+
         List<Atom> listaAtom = atomRepository.findAll();
 
-        // Ordena a lista de átomos pelo número atômico
+
         listaAtom.sort(Comparator.comparingInt(Atom::getNumeroAtomico));
 
         return listaAtom;
