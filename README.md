@@ -15,14 +15,15 @@ Usage:
 
     Clone the Repository:
 
-    bash
+```bash
 
     git clone https://github.com/your-username/mendeleev-api.git
+
+```
 
     Open Project in IntelliJ IDEA:
         Open IntelliJ IDEA.
         Click on "Open or Import" and select the cloned mendeleev-api directory.
-
     Configure Database (if necessary):
         If the project requires a database setup or configuration within IntelliJ IDEA, follow the project-specific instructions to set it up.
 
