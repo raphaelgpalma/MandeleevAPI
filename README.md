@@ -28,7 +28,7 @@ Configure Database (if necessary):
 Run the Application:
 
 Locate the DemoApplication.java class in the project structure.
-    Right-click on DemoApplication.java and select ▶ as "Run DemoApplication".
+    Right-click on DemoApplication.java and select as "Run DemoApplication" or just click on ▶ for running the main class on DemoApplication.
 
 Access API Endpoints:
         Once the application is running, you can access the API endpoints using a web browser or a tool like Postman.
