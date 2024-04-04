@@ -40,6 +40,6 @@ Test and Explore:
 
 Note:
 
-    Ensure that all necessary dependencies are resolved within IntelliJ IDEA to avoid any compilation or runtime errors.
-    Make sure to configure any environment-specific settings or properties required for the application to run smoothly within IntelliJ IDEA.
+Ensure that all necessary dependencies are resolved within IntelliJ IDEA to avoid any compilation or runtime errors.
+Make sure to configure any environment-specific settings or properties required for the application to run smoothly within IntelliJ IDEA.
 
