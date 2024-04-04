@@ -16,7 +16,7 @@ Usage:
 Clone the Repository:
 
 ```bash
-    git clone https://github.com/your-username/mendeleev-api.git
+    git clone https://github.com/raphaelgpalma/mandeleevAPI.git
 ```
 
 Open Project in IntelliJ IDEA:
